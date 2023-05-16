@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://7us5ivd44w0f"]
+
+[ext_resource type="Script" path="res://scenes/manager/UpgradeManager.cs" id="1_1xufw"]
+[ext_resource type="Resource" uid="uid://jpirl52yi7vk" path="res://resources/upgrades/sword_rate.tres" id="2_22nv4"]
+[ext_resource type="PackedScene" uid="uid://ce22ne3ekt0qu" path="res://scenes/ui/upgrade_screen.tscn" id="3_djbb5"]
+
+[node name="UpgradeManager" type="Node" node_paths=PackedStringArray("ExperienceManager")]
+script = ExtResource("1_1xufw")
+UpgradePool = Array[Resource]([ExtResource("2_22nv4")])
+ExperienceManager = NodePath("")
+UpgradeScreenScene = ExtResource("3_djbb5")
